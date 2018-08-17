@@ -1,6 +1,6 @@
 {
   "name": "metagetter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple nodejs utility that gets the metadata for a url to enable url/link previews",
   "main": "dist/index.js",
   "scripts": {
