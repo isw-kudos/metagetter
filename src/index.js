@@ -5,6 +5,7 @@ export const getMetaData = _getMetaData.bind(null, tagDefs);
 
 /**
  * Convenience function for handling express requests.
+ * Depends on query param 'url'
  */
 export function expressHandler(req, res) {
   const { query } = req;

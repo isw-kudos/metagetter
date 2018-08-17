@@ -3,20 +3,16 @@ A simple nodejs utility that gets the metadata for a url to enable url/link prev
 
 ## Usage
 ```
-import { handle, getMetaData } from 'metagetter';
-const router = new express.Router();
+//two exposed functions
+import { expressHandler, getMetaData } from 'metagetter';
 
-//express requests
-router.route('/metagetter').get(handle);
+//express handler
+//expects a query param 'url'
+router.route('/metagetter').get(expressHandler);
 
 //api
 getMetaData('www.google.com').then(metaData => {
   console.log(metaData);
-  /*
-  {
-    ...
-  }
-   */
 });
 ```
 
