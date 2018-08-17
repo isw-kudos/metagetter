@@ -1,0 +1,42 @@
+{
+  "name": "metagetter",
+  "version": "1.0.0",
+  "description": "A simple nodejs utility that gets the metadata for a url to enable url/link previews",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isw-kudos/metagetter.git"
+  },
+  "keywords": [
+    "url",
+    "preview",
+    "jsdom",
+    "link",
+    "metadata",
+    "meta",
+    "og",
+    "twitter",
+    "open-graph"
+  ],
+  "author": "ISW (jagrawal)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isw-kudos/metagetter/issues"
+  },
+  "homepage": "https://github.com/isw-kudos/metagetter#readme",
+  "dependencies": {
+    "jsdom": "^11.12.0",
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-esnext": "^3.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "prettier": "^1.13.7"
+  }
+}
