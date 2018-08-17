@@ -10,7 +10,7 @@
  *  instead of an attribute value
  * @type {Array}
  */
-module.exports = [
+export default [
   // description
   {
     name: 'description',
@@ -50,7 +50,7 @@ module.exports = [
   // favicon
   {
     name: 'favicon',
-    selector: 'link[rel="icon"]',
+    selector: 'link[rel*="icon"]',
     content: 'href',
   },
 ];

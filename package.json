@@ -2,10 +2,11 @@
   "name": "metagetter",
   "version": "1.0.0",
   "description": "A simple nodejs utility that gets the metadata for a url to enable url/link previews",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "babel src -s -D -d dist"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,13 @@
     "node-fetch": "^2.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.10.0",
     "eslint-config-esnext": "^3.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
